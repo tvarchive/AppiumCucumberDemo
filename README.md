@@ -18,6 +18,7 @@ This java project has been created using **IntelliJ IDea 13 Community Edition**.
 - **Open the solution**
 - **Rebuild**
 - **Start the appium Server, point the app to the apps location in this folder**
+- **Connect your Android Device and Change the Driver Factory and Device class accordingly. The detailed steps are mentioned in the gitbook **
 - **Run the test**
 
 For any help write us on *nishant@testvagrant.com*, *sukesh@testvagrant.com*
