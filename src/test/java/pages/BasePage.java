@@ -1,8 +1,8 @@
 package pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,19 +13,19 @@ import java.util.HashMap;
 public class BasePage {
 
 
-    protected WebDriver driver;
+    protected AndroidDriver driver;
     String app_package_name = "com.flipkart.android:id/";
 
-    public BasePage(WebDriver driver) {
+    public BasePage(AndroidDriver driver) {
         this.driver = driver;
     }
 
     protected void waitForVisibilityOf(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     protected void waitForClickabilityOf(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 

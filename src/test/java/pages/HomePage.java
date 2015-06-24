@@ -1,8 +1,8 @@
 package pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
     By search_textbox_locator = By.id(app_package_name + "autoCompleteTextView");
 
 
-    public HomePage(WebDriver driver) {
+    public HomePage(AndroidDriver driver) {
         super(driver);
     }
 

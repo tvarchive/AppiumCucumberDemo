@@ -1,7 +1,7 @@
 package pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class ResultPage extends HomePage {
     By productHeaderText = By.id(app_package_name + "product_list_product_item_main_text");
 
 
-    public ResultPage(WebDriver driver) {
+    public ResultPage(AndroidDriver driver) {
         super(driver);
     }
 

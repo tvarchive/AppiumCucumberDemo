@@ -1,7 +1,7 @@
 package pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
 
@@ -13,7 +13,7 @@ public class LoginPage extends BasePage {
     By error_text = By.id(app_package_name + "text");
 
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage(AndroidDriver driver) {
         super(driver);
     }
 
@@ -27,6 +27,12 @@ public class LoginPage extends BasePage {
     }
 
     public void verifyErrorText(String error){
+        waitForVisibilityOf(error_text);
         error.contentEquals(driver.findElement(error_text).getText());
+    }
+
+    public void waitForLoginScreen() {
+        waitForVisibilityOf(userId);
+        waitForClickabilityOf(login_Button);
     }
 }

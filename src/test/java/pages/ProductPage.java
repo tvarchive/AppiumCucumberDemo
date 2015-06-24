@@ -1,14 +1,14 @@
 package pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 
 public class ProductPage extends BasePage{
 
 
-    public ProductPage(WebDriver driver) {
+    public ProductPage(AndroidDriver driver) {
         super(driver);
     }
 
