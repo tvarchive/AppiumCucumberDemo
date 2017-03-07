@@ -1,3 +1,6 @@
+## Note: We have built Optimus to help you start doing funtional automation from the first day itself. It's the most advanced framework which even let you do the inter-app testing very easily and it's absolutely free.  
+####Visit www.testvagrant.com/optimus
+
 AppiumDemo
 ==========
 ##Testing Mobile App using Appium
@@ -21,4 +24,4 @@ This java project has been created using **IntelliJ IDea 13 Community Edition**.
 - **Connect your Android Device and Change the Driver Factory and Device class accordingly. The detailed steps are mentioned in the gitbook **
 - **Run the test**
 
-For any help write us on *nishant@testvagrant.com*, *sukesh@testvagrant.com*
+For any help write us on *optimus@testvagrant.com*
